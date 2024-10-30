@@ -2,7 +2,6 @@ package com.example.fluttershareexample;
 
 import android.os.Bundle;
 
-import com.example.documentspicker.DocumentsPickerPlugin;
 import com.example.fluttershare.FlutterSharePlugin;
 
 import io.flutter.app.FlutterActivity;
@@ -13,8 +12,6 @@ public class EmbedderV1Activity extends FlutterActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PathProviderPlugin.registerWith(registrarFor("io.flutter.plugins.flutter.io/path_provider"));
-        DocumentsPickerPlugin.registerWith(
-                registrarFor("com.example.documentspicker.DocumentsPickerPlugin"));
         FlutterSharePlugin.registerWith(registrarFor("com.example.fluttershareexample.FlutterShare"));
     }
 }
